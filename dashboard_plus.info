@@ -1,5 +1,5 @@
 type = module
 name = Dashboard Plus
 description = Adds a libary of additional blocks for potential use on the admin dashboard.
-package = Dashboard
+package = Blocks
 backdrop = 1.x
