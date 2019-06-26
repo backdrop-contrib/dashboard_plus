@@ -1,1 +1,19 @@
 
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function dashboard_plus_block_info() {
+  $blocks['dashboard_test'] = array(
+    'info' => t('Test block'),
+    'description' => t('This is a test block for Dashboard Blocks.'),
+  );
+  return $blocks;
+}
+
+function dashboard_plus_block_view() {
+  $block['subject'] = 'Custom Block Subject';
+  $block['content'] = 'Custom Block Content';
+  return $block;
+}
