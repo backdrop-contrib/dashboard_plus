@@ -5,15 +5,15 @@
  * Implements hook_block_info().
  */
 function dashboard_plus_block_info() {
-  $blocks['dashboard_test'] = array(
+  $blocks['backdrop_links'] = array(
     'info' => t('Test block'),
-    'description' => t('This is a test block for Dashboard Blocks.'),
+    'description' => t('Some links to important resources for Backdrop CMS users'),
   );
   return $blocks;
 }
 
 function dashboard_plus_block_view() {
-  $block['subject'] = 'Dashboard Plus Title';
+  $block['subject'] = 'Backdrop CMS Resources';
   $block['content'] = 'Dashboard Plus Content';
   return $block;
 }
