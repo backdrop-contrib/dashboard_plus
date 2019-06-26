@@ -29,7 +29,7 @@ Installation
    Blocks installed with this module will have a title starting with 
    Dashboard Plus
    
-   Example: Dashboard Plus - Backdrop Resources
+   **Example**: *Dashboard Plus - Backdrop Resources*
    
  - Enable blocks 
    https://backdropcms.org/user-guide/blocks
