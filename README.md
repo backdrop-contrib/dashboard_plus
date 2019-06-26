@@ -7,12 +7,33 @@ At this point, we are looking for good ideas for blocks to include in this modul
 
 https://github.com/backdrop-contrib/dashboard_plus/issues
 
+This module currently contains the following blocks:
+
+ * Dashboard Plus - Backdrop CMS Resources
+   Contains hardcoded links to some important and useful Backdrop CMS resources. 
+   - Backdrop CMS Forums
+   - Backdrop CMS User Guide
+   - Backdrop CMS Core Issue Queue
+
 
 Installation
 ------------
 
  - Install this module using the official Backdrop CMS instructions at
    https://backdropcms.org/guide/modules.
+   
+   This module makes several blocks available for you to place in any layout. 
+   While these blocks have been created with the editor dashboard in mind, they 
+   can be used anywhere on the site.
+   
+   Blocks installed with this module will have a title starting with 
+   Dashboard Plus
+   Example: Dashboard Plus - Backdrop Resources
+   
+ - Enable blocks 
+   https://backdropcms.org/user-guide/blocks
+   
+   
 
  Documentation
  -------------
