@@ -12,8 +12,8 @@ function dashboard_plus_block_info() {
   return $blocks;
 }
 
-function hook_block_view('dashboard_test') {
-	  $block['subject'] = 'Custom Block Subject';
-      $block['content'] = 'Custom Block Content';
-      return $block;
+function dashboard_plus_block_view() {
+  $block['subject'] = 'Custom Block Subject';
+  $block['content'] = 'Custom Block Content';
+  return $block;
 }
