@@ -5,15 +5,17 @@
  * Implements hook_block_info().
  */
 function dashboard_plus_block_info() {
-  $blocks['dashboard_test'] = array(
-    'info' => t('Test block'),
-    'description' => t('This is a test block for Dashboard Blocks.'),
+  $blocks['backdrop_resources'] = array(
+    'info' => t('Backdrop Resources'),
+    'description' => t('Some links to important resources for Backdrop CMS users'),
   );
   return $blocks;
 }
 
 function dashboard_plus_block_view() {
-  $block['subject'] = 'Dashboard Plus Title';
-  $block['content'] = 'Dashboard Plus Content';
+  $block['subject'] = 'Backdrop CMS Resources';
+  $block['content'] = $block['content'] . '<li><a target="_blank" href="https://forum.backdropcms.org">Ask A Question</a> - Backdrop CMS Forums</li>';
+  $block['content'] = $block['content'] . '<li><a target="_blank" href="https://backdropcms.org/user-guide">Learn about Backdrop CMS</a> - User Guide</li>';
+  $block['content'] = $block['content'] . '<li><a target="_blank" href="https://github.com/backdrop/backdrop-issues/issues">Report a bug</a> - Backdrop CMS Core Issue Queue</li>';
   return $block;
 }
