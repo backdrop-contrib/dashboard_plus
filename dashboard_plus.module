@@ -13,7 +13,7 @@ function dashboard_plus_block_info() {
 }
 
 function dashboard_plus_block_view() {
-  $block['subject'] = 'Custom Block Subject';
-  $block['content'] = 'Custom Block Content';
+  $block['subject'] = 'Dashboard Plus Title';
+  $block['content'] = 'Dashboard Plus Content';
   return $block;
 }
