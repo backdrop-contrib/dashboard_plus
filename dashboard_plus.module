@@ -14,8 +14,8 @@ function dashboard_plus_block_info() {
 
 function dashboard_plus_block_view() {
   $block['subject'] = 'Backdrop CMS Resources';
-  $block['content'] = $block['content'] . '<li><a target="_blank" href="https://forum.backdropcms.org">Ask A Question</a> - Backdrop CMS Forums</li>';
-  $block['content'] = $block['content'] . '<li><a target="_blank" href="https://backdropcms.org/user-guide">Learn about Backdrop CMS</a> - User Guide</li>';
-  $block['content'] = $block['content'] . '<li><a target="_blank" href="https://github.com/backdrop/backdrop-issues/issues">Report a bug</a> - Backdrop CMS Core Issue Queue</li>';
+  $block['content'] = '<li><a target="_blank" href="https://forum.backdropcms.org">Ask A Question</a> - Backdrop CMS Forums</li>';
+  $block['content'] .= '<li><a target="_blank" href="https://backdropcms.org/user-guide">Learn about Backdrop CMS</a> - User Guide</li>';
+  $block['content'] .= '<li><a target="_blank" href="https://github.com/backdrop/backdrop-issues/issues">Report a bug</a> - Backdrop CMS Core Issue Queue</li>';
   return $block;
 }
