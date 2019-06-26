@@ -6,7 +6,7 @@
  */
 function dashboard_plus_block_info() {
   $blocks['backdrop_resources'] = array(
-    'info' => t('Backdrop Resources'),
+    'info' => t('Backdrop CMS Resources'),
     'description' => t('Some links to important resources for Backdrop CMS users'),
   );
   return $blocks;
