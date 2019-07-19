@@ -9,11 +9,10 @@ https://github.com/backdrop-contrib/dashboard_plus/issues
 
 This module currently contains the following blocks:
 
- * Dashboard Plus - Backdrop CMS Resources
-   Contains hardcoded links to some important and useful Backdrop CMS resources. 
-   - Backdrop CMS Forums
-   - Backdrop CMS User Guide
-   - Backdrop CMS Core Issue Queue
+ * Dashboard Plus - Resources 
+   - *Contains hardcoded links to some important and useful Backdrop CMS resources.*
+ * Dashboard Plus - Manage content
+   - *Contains links to add or manage existing content for each content type. Meant to replace the existing Dashboard - Create content block.*
 
 
 Installation
