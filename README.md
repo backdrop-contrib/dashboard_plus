@@ -56,7 +56,7 @@ Installation
  Credits
  -------
 
- - Coming soon...
+ - Work sponsored by: Simplo (https://simplo.site) by Triplo (https://triplo.co)
 
  License
  -------
