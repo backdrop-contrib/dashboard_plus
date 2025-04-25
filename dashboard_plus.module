@@ -18,6 +18,11 @@ function dashboard_plus_block_info() {
     'description' => t('Shows the 10 most recent watchdog log messages.'),
     'class' => 'DashboardWatchdogBlock',
   );
+  $blocks['recent_unpublished_comments'] = array(
+    'info' => t('Dashboard Plus - Recent unpublished comments'),
+    'description' => t('Shows the most recent unpublished comments.'),
+    'class' => 'DashboardUnpublishedCommentsBlock',
+  );
   return $blocks;
 }
 
@@ -36,6 +41,7 @@ function dashboard_plus_autoload_info() {
   return array(
     'DashboardManageContentBlock' => 'includes/block.manage_content.inc',
     'DashboardWatchdogBlock' => 'includes/block.watchdog.inc',
+    'DashboardUnpublishedCommentsBlock' => 'includes/block.unpublished_comments.inc',
   );
 }
 
