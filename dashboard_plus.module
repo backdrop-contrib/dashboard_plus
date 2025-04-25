@@ -13,6 +13,11 @@ function dashboard_plus_block_info() {
     'description' => t('Provides links to manage content'),
     'class' => 'DashboardManageContentBlock',
   );
+  $blocks['watchdog'] = array(
+    'info' => t('Dashboard Plus - Recent log messages'),
+    'description' => t('Shows the 10 most recent watchdog log messages.'),
+    'class' => 'DashboardWatchdogBlock',
+  );
   return $blocks;
 }
 
@@ -30,7 +35,7 @@ function dashboard_plus_block_view() {
 function dashboard_plus_autoload_info() {
   return array(
     'DashboardManageContentBlock' => 'includes/block.manage_content.inc',
-
+    'DashboardWatchdogBlock' => 'includes/block.watchdog.inc',
   );
 }
 
