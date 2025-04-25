@@ -23,6 +23,11 @@ function dashboard_plus_block_info() {
     'description' => t('Shows the most recent unpublished comments.'),
     'class' => 'DashboardUnpublishedCommentsBlock',
   );
+  $blocks['backdrop_release_notes'] = array(
+    'info' => t('Dashboard Plus - Backdrop release notes'),
+    'description' => t('Shows the release notes for the latest version of Backdrop CMS.'),
+    'class' => 'DashboardBackdropReleaseNotesBlock',
+  );
   return $blocks;
 }
 
@@ -42,6 +47,7 @@ function dashboard_plus_autoload_info() {
     'DashboardManageContentBlock' => 'includes/block.manage_content.inc',
     'DashboardWatchdogBlock' => 'includes/block.watchdog.inc',
     'DashboardUnpublishedCommentsBlock' => 'includes/block.unpublished_comments.inc',
+    'DashboardBackdropReleaseNotesBlock' => 'includes/block.release_notes.inc',
   );
 }
 
