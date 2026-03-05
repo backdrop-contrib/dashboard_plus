@@ -79,7 +79,7 @@ class DashboardManageContentBlock extends Block {
       $rows[] = array(
         array(
           'data' => t('There are no content types to display.'),
-          'colspan' => 4,
+          'colspan' => 3,
         ),
       );
     }
