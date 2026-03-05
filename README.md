@@ -49,6 +49,9 @@ https://github.com/backdrop-contrib/dashboard_plus/issues
  * Dashboard Plus - Module of the day
    - *Displays a randomly selected Backdrop CMS module each day, pulled live from the BackdropCMS.org project directory. Shows the module title (linked to its project page), a truncated description with a "Read more" toggle, and install/maintenance stats. Includes a "See another" button to browse additional modules without leaving the dashboard.*
 
+ * Dashboard Plus - New module releases
+   - *Lists the most recently published modules on BackdropCMS.org (first releases only, not updates). Pulls from the BackdropCMS.org RSS feed and displays modules sorted by release date, newest first. Configurable to show 5, 10, 15, or 20 entries. Includes a link to browse all releases on BackdropCMS.org.*
+
 ## Installation
 
  - Install this module using the official Backdrop CMS instructions at

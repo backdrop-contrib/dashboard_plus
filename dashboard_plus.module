@@ -34,7 +34,7 @@ function dashboard_plus_motd_next() {
   }
   $_SESSION['dashboard_plus_motd_skip'][$today]++;
 
-  $block = new DashboardModuleOfDayBlock('module_of_day', array());
+  $block = new DashboardModuleOfDayBlock('dashboard_plus:module_of_day', array());
   backdrop_json_output(array('html' => $block->renderModuleHtml()));
 }
 
@@ -81,6 +81,11 @@ function dashboard_plus_block_info() {
     'description' => t('Displays a randomly selected Backdrop CMS module each day.'),
     'class' => 'DashboardModuleOfDayBlock',
   );
+  $blocks['recent_modules'] = array(
+    'info' => t('Dashboard Plus - New module releases'),
+    'description' => t('Lists newly published modules on BackdropCMS.org (first releases only, not updates).'),
+    'class' => 'DashboardRecentModulesBlock',
+  );
   return $blocks;
 }
 
@@ -104,6 +109,7 @@ function dashboard_plus_autoload_info() {
     'DashboardCronStatusBlock' => 'includes/block.cron_status.inc',
     'DashboardWeatherBlock' => 'includes/block.weather.inc',
     'DashboardModuleOfDayBlock' => 'includes/block.module_of_day.inc',
+    'DashboardRecentModulesBlock' => 'includes/block.recent_modules.inc',
   );
 }
 
