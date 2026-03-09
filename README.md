@@ -1,13 +1,13 @@
 Dashboard Plus
 ==============
 
-This module does two things:
+This module provides two things:
 
-  * Provides the option to make all dashboard blocks collapsible (on by default).
+  * The option to make all dashboard blocks collapsible (on by default).
 
 ![image](https://github.com/user-attachments/assets/9a559f1f-277a-451e-82cd-838830bc3aaf)
 
-  * Provides a set of additional blocks that can be (optionally) placed on the Dashboard provided by Backdrop CMS. 
+  * A set of additional blocks that can be placed on the Dashboard provided by Backdrop CMS.
 
 At this point, we are looking for good ideas for blocks to include in this module, please use the issue queue to submit requests. 
 
@@ -51,6 +51,12 @@ https://github.com/backdrop-contrib/dashboard_plus/issues
 
  * Dashboard Plus - New module releases
    - *Lists the most recently published modules on BackdropCMS.org (first releases only, not updates). Pulls from the BackdropCMS.org RSS feed and displays modules sorted by release date, newest first. Configurable to show 5, 10, 15, or 20 entries. Includes a link to browse all releases on BackdropCMS.org.*
+
+ * Dashboard Plus - Manage taxonomy
+   - *Shows all taxonomy vocabularies (or a configurable subset) with a term count and links to add a new term or manage existing terms for each vocabulary.*
+
+ * Dashboard Plus - JSON Feed
+   - *Displays items from any [JSON Feed](https://www.jsonfeed.org/)-compliant URL. Configurable URL, item count, date display, content display, and cache duration. Can be placed multiple times with different feeds. Useful for following external blogs or news sources directly from the dashboard.*
 
 ## Installation
 
