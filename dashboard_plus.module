@@ -91,6 +91,11 @@ function dashboard_plus_block_info() {
     'description' => t('Provides links to manage taxonomy vocabularies and terms.'),
     'class' => 'DashboardManageTaxonomyBlock',
   );
+  $blocks['json_feed'] = array(
+    'info' => t('Dashboard Plus - JSON Feed'),
+    'description' => t('Displays items from any JSON Feed-compliant URL.'),
+    'class' => 'DashboardJsonFeedBlock',
+  );
   return $blocks;
 }
 
@@ -116,6 +121,7 @@ function dashboard_plus_autoload_info() {
     'DashboardModuleOfDayBlock' => 'includes/block.module_of_day.inc',
     'DashboardRecentModulesBlock' => 'includes/block.recent_modules.inc',
     'DashboardManageTaxonomyBlock' => 'includes/block.manage_taxonomy.inc',
+    'DashboardJsonFeedBlock'       => 'includes/block.json_feed.inc',
   );
 }
 
