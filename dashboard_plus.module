@@ -86,6 +86,11 @@ function dashboard_plus_block_info() {
     'description' => t('Lists newly published modules on BackdropCMS.org (first releases only, not updates).'),
     'class' => 'DashboardRecentModulesBlock',
   );
+  $blocks['manage_taxonomy'] = array(
+    'info' => t('Dashboard Plus - Manage taxonomy'),
+    'description' => t('Provides links to manage taxonomy vocabularies and terms.'),
+    'class' => 'DashboardManageTaxonomyBlock',
+  );
   return $blocks;
 }
 
@@ -110,6 +115,7 @@ function dashboard_plus_autoload_info() {
     'DashboardWeatherBlock' => 'includes/block.weather.inc',
     'DashboardModuleOfDayBlock' => 'includes/block.module_of_day.inc',
     'DashboardRecentModulesBlock' => 'includes/block.recent_modules.inc',
+    'DashboardManageTaxonomyBlock' => 'includes/block.manage_taxonomy.inc',
   );
 }
 
