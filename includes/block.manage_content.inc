@@ -41,32 +41,38 @@ class DashboardManageContentBlock extends Block {
    */
   function getContent() {
     $node_types = node_type_get_types();
-    $access = user_access('administer content types');
+    $access = user_access('access content overview');
     //    $options = array('destination' => current_path());
     $header = array(
       array('data' => t('Content type')),
+      array('data' => t('Count')),
       array('data' => t('Create')),
       array('data' => t('Manage')),
     );
     $rows = array();
-
     // Check access, then add a link to create content.
     if ($access) {
       foreach ($node_types as $machine => $node_type) {
         // If no types are specified, show all types.
         if (empty($this->settings['types']) || in_array($machine, $this->settings['types'])) {
-          $type_url_string = str_replace('_', '-', $node_type->type);
-          $create = l(t('Create', array('@type' => t($node_type->name))), 'node/add/' . $type_url_string, array('html' => TRUE));
-          $manage = l(t('Manage', array('@type' => t($node_type->name))), 'admin/content/node', array('html' => TRUE, 'query' => array('status' => 'All', 'type' => $type_url_string)));
+          $count = db_query('SELECT COUNT(*) FROM {node} WHERE type = :type', array(':type' => $machine))->fetchField();
+          $create = node_access('create', $machine)
+            ? l(t('Create', array('@type' => t($node_type->name))), 'node/add/' . $node_type->type, array('html' => TRUE))
+            : '-';
+          $manage = user_access('access content overview')
+            ? l(t('Manage', array('@type' => t($node_type->name))), 'admin/content/node', array('html' => TRUE, 'query' => array('status' => 'All', 'type' => $node_type->type)))
+            : '-';
           $rows[] = array(
             'data' => array(
               check_plain(t($node_type->name)),
+              $count,
               $create,
               $manage,
             ),
           );
         }
       }
+      // exit;
     }
     else {
       return array();
@@ -89,14 +95,6 @@ class DashboardManageContentBlock extends Block {
       '#header' => $header,
       '#rows' => $rows,
     );
-
-    if ($access) {
-      $panel['link'] = array(
-        '#theme' => 'link',
-        '#path' => 'admin/structure/types',
-        '#text' => t('Manage content types'),
-      );
-    }
 
     return $panel;
   }
